@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 38% 95%;
+    --foreground: 220 20% 10%;
+    --surface: 0 0% 100%;
+    --surface-2: 40 30% 91%;
+    --muted: 40 20% 90%;
+    --muted-foreground: 220 10% 40%;
+    --border: 40 20% 85%;
+    --input: 40 20% 85%;
+    --ring: 350 79% 44%;
+
+    --crimson: 350 79% 44%;
+    --crimson-foreground: 40 30% 98%;
+    --indigo: 222 45% 17%;
+    --indigo-foreground: 40 30% 98%;
+    --marigold: 36 89% 55%;
+    --marigold-foreground: 222 45% 12%;
+    --pine: 152 38% 31%;
+    --pine-foreground: 40 30% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 30% 98%;
+  }
+
+  .dark {
+    --background: 220 25% 6%;
+    --foreground: 40 20% 95%;
+    --surface: 222 28% 10%;
+    --surface-2: 222 24% 14%;
+    --muted: 222 20% 16%;
+    --muted-foreground: 220 12% 65%;
+    --border: 222 20% 20%;
+    --input: 222 20% 20%;
+    --ring: 36 89% 58%;
+
+    --crimson: 350 75% 55%;
+    --crimson-foreground: 220 25% 8%;
+    --indigo: 222 45% 24%;
+    --indigo-foreground: 40 30% 96%;
+    --marigold: 36 89% 58%;
+    --marigold-foreground: 222 45% 10%;
+    --pine: 152 35% 40%;
+    --pine-foreground: 220 25% 8%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 40 30% 96%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01" on, "cv01" on;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background-color: hsl(var(--marigold) / 0.35);
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--marigold));
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* Signature element: a Lungta (prayer-flag) strip — the five canonical
+     flag colors, used as a section divider throughout the site instead of
+     a plain hairline rule. Grounded in the actual cultural artifact rather
+     than decoration. */
+  .prayer-flag-strip {
+    height: 6px;
+    width: 100%;
+    background-image: theme("backgroundImage.flag-strip");
+    background-size: 200px 100%;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    background-color: hsl(var(--surface) / 0.65);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden bg-muted;
+  }
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--surface) / 0.6),
+      transparent
+    );
+    animation: shimmer 1.6s infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
