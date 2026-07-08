@@ -1,30 +1,27 @@
 "use client";
 
 import * as React from "react";
-import { Check, X, Users, Building2, CalendarDays, Briefcase, MapPinned, ShieldCheck } from "lucide-react";
+import { Check, X, Users, Building2, CalendarDays, MapPinned, ShieldCheck } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cities } from "@/lib/data/cities";
 import { clubs } from "@/lib/data/clubs";
-import { businesses, groceries } from "@/lib/data/businesses";
 import { events } from "@/lib/data/events";
-import { jobs } from "@/lib/data/jobs";
 import { restaurants } from "@/lib/data/restaurants";
 
 const pendingQueue = [
   { id: "p1", type: "Sports Club", name: "Leipzig Lions Cricket Club", city: "Leipzig", submittedBy: "sanjay@example.com" },
   { id: "p2", type: "Restaurant", name: "Sherpa Kitchen", city: "Hanover", submittedBy: "owner@sherpakitchen.de" },
-  { id: "p3", type: "Housing", name: "2-Bed Flat near Alexanderplatz", city: "Berlin", submittedBy: "renter@example.com" },
+  { id: "p3", type: "Music Group", name: "Kathmandu Beats Berlin", city: "Berlin", submittedBy: "band@example.com" },
 ];
 
 const overviewStats = [
   { icon: MapPinned, label: "Cities", value: cities.length },
-  { icon: Users, label: "Clubs", value: clubs.length },
-  { icon: Building2, label: "Businesses", value: businesses.length + groceries.length + restaurants.length },
+  { icon: Users, label: "Clubs & Groups", value: clubs.length },
+  { icon: Building2, label: "Restaurants", value: restaurants.length },
   { icon: CalendarDays, label: "Events", value: events.length },
-  { icon: Briefcase, label: "Jobs", value: jobs.length },
 ];
 
 export default function AdminPage() {
@@ -46,7 +43,7 @@ export default function AdminPage() {
         </div>
       </div>
 
-      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-5">
+      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
         {overviewStats.map((s) => (
           <div key={s.label} className="rounded-2xl border border-border bg-surface p-5 text-center shadow-soft">
             <s.icon className="mx-auto mb-2 h-5 w-5 text-primary" />
@@ -60,10 +57,9 @@ export default function AdminPage() {
         <TabsList className="flex-wrap h-auto gap-y-2">
           <TabsTrigger value="approvals">Approvals</TabsTrigger>
           <TabsTrigger value="cities">Cities</TabsTrigger>
-          <TabsTrigger value="clubs">Clubs</TabsTrigger>
-          <TabsTrigger value="businesses">Businesses</TabsTrigger>
+          <TabsTrigger value="clubs">Clubs & Groups</TabsTrigger>
+          <TabsTrigger value="restaurants">Restaurants</TabsTrigger>
           <TabsTrigger value="events">Events</TabsTrigger>
-          <TabsTrigger value="jobs">Jobs</TabsTrigger>
         </TabsList>
 
         <TabsContent value="approvals">
@@ -104,26 +100,20 @@ export default function AdminPage() {
         </TabsContent>
         <TabsContent value="clubs">
           <AdminTable
-            columns={["Club", "City", "Category", "Members", "Status"]}
+            columns={["Club/Group", "City", "Category", "Members", "Status"]}
             rows={clubs.map((c) => [c.name, c.citySlug, c.categorySlug, c.memberCount, c.status])}
           />
         </TabsContent>
-        <TabsContent value="businesses">
+        <TabsContent value="restaurants">
           <AdminTable
-            columns={["Business", "City", "Category", "Rating", "Status"]}
-            rows={[...businesses, ...groceries, ...restaurants].map((b) => [b.name, b.citySlug, b.category, b.rating, b.status])}
+            columns={["Restaurant", "City", "Category", "Rating", "Status"]}
+            rows={restaurants.map((b) => [b.name, b.citySlug, b.category, b.rating, b.status])}
           />
         </TabsContent>
         <TabsContent value="events">
           <AdminTable
             columns={["Event", "City", "Date", "Category", "Status"]}
             rows={events.map((e) => [e.title, e.citySlug, e.startDate, e.category, e.status])}
-          />
-        </TabsContent>
-        <TabsContent value="jobs">
-          <AdminTable
-            columns={["Job", "Company", "City", "Type", "Status"]}
-            rows={jobs.map((j) => [j.title, j.company, j.citySlug, j.type, j.status])}
           />
         </TabsContent>
       </Tabs>

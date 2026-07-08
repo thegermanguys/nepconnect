@@ -25,7 +25,6 @@ export interface City {
 export type CategoryGroup =
   | "sports"
   | "community"
-  | "services"
   | "food"
   | "life";
 
@@ -93,10 +92,6 @@ export interface Restaurant extends Business {
   delivery: { partner: string; url: string }[];
 }
 
-export interface Grocery extends Business {
-  specialties: string[];
-}
-
 export interface EventItem {
   id: string;
   slug: string;
@@ -115,89 +110,6 @@ export interface EventItem {
   registerUrl: string;
   isFeatured?: boolean;
   status: ModerationStatus;
-}
-
-export interface Job {
-  id: string;
-  slug: string;
-  title: string;
-  company: string;
-  citySlug: string;
-  salary: string;
-  type: "Full-time" | "Part-time" | "Internship" | "Working Student" | "Ausbildung";
-  remote: boolean;
-  description: string;
-  requirements: string[];
-  postedDate: string;
-  applyUrl: string;
-  isPromoted?: boolean;
-  status: ModerationStatus;
-}
-
-export interface Housing {
-  id: string;
-  slug: string;
-  title: string;
-  citySlug: string;
-  type: "Room" | "Apartment" | "Temporary Accommodation";
-  price: number;
-  sizeSqm: number;
-  availableFrom: string;
-  photos: string[];
-  description: string;
-  contactName: string;
-  contactPhone: string;
-  isPromoted?: boolean;
-  status: ModerationStatus;
-}
-
-export interface Doctor {
-  id: string;
-  slug: string;
-  name: string;
-  citySlug: string;
-  specialization: string;
-  languages: ("Nepali" | "English" | "German" | "Hindi")[];
-  address: string;
-  phone: string;
-  mapsUrl: string;
-  appointmentUrl: string;
-  photo: string;
-  status: ModerationStatus;
-}
-
-export interface Lawyer {
-  id: string;
-  slug: string;
-  name: string;
-  citySlug: string;
-  practiceAreas: (
-    | "Immigration"
-    | "Civil"
-    | "Criminal"
-    | "Family"
-    | "Corporate"
-  )[];
-  languages: ("Nepali" | "English" | "German")[];
-  address: string;
-  phone: string;
-  mapsUrl: string;
-  photo: string;
-  status: ModerationStatus;
-}
-
-export interface University {
-  id: string;
-  slug: string;
-  name: string;
-  citySlug: string;
-  logo: string;
-  studentAssociationName?: string;
-  studentAssociationContact?: string;
-  nearbyRestaurantSlugs: string[];
-  nearbyGrocerySlugs: string[];
-  nearbyHousingSlugs: string[];
-  nearbyClubSlugs: string[];
 }
 
 export interface ReviewItem {

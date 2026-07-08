@@ -17,7 +17,7 @@ export default function CitiesPage() {
         </h1>
         <p className="mt-4 text-muted-foreground">
           {cities.length} cities listed and growing. Tap any city to see its sports clubs,
-          associations, businesses, jobs, housing, and events.
+          cultural and music groups, restaurants, and events.
         </p>
       </div>
       <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

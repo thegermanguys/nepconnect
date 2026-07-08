@@ -14,19 +14,13 @@ const columns = [
   {
     title: "Life in Germany",
     links: [
-      { href: "/jobs", label: "Jobs" },
-      { href: "/housing", label: "Housing" },
       { href: "/restaurants", label: "Restaurants" },
-      { href: "/doctors", label: "Doctors" },
-      { href: "/lawyers", label: "Lawyers" },
-      { href: "/universities", label: "Universities" },
     ],
   },
   {
     title: "Community",
     links: [
       { href: "/submit", label: "Submit Your Community" },
-      { href: "/resources", label: "Newcomer Resources" },
       { href: "/dashboard", label: "Club & Business Dashboard" },
       { href: "/admin", label: "Admin" },
     ],
@@ -46,7 +40,7 @@ export function Footer() {
             Nepali Connect Germany
           </Link>
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            The home of Nepalis in Germany — sports clubs, communities, businesses, jobs, housing, and events, all in one place.
+            The home of Nepalis in Germany — sports clubs, cultural groups, restaurants, and events, all in one place.
           </p>
           <div className="mt-5 flex gap-3">
             <a href="#" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-2 hover:bg-primary hover:text-primary-foreground transition-colors">
@@ -81,8 +75,6 @@ export function Footer() {
         <div className="container flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} Nepali Connect Germany. Built by the community, for the community.</p>
           <div className="flex gap-4">
-            <Link href="/resources" className="hover:text-foreground">Privacy</Link>
-            <Link href="/resources" className="hover:text-foreground">Terms</Link>
             <Link href="/submit" className="hover:text-foreground">Advertise</Link>
           </div>
         </div>

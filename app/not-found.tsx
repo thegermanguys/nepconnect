@@ -10,7 +10,7 @@ export default function NotFound() {
       </span>
       <h1 className="mt-6 font-display text-3xl font-semibold">Page not found</h1>
       <p className="mt-2 max-w-md text-muted-foreground">
-        This page doesn't exist yet — maybe it's waiting for your community to submit it.
+        This page doesn&apos;t exist yet — maybe it&apos;s waiting for your community to submit it.
       </p>
       <div className="mt-8 flex gap-3">
         <Button asChild>

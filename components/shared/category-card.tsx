@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 const groupAccent: Record<Category["group"], string> = {
   sports: "bg-flag-red/10 text-flag-red group-hover:bg-flag-red group-hover:text-white",
   community: "bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground",
-  services: "bg-pine/10 text-pine group-hover:bg-pine group-hover:text-pine-foreground",
   food: "bg-accent/15 text-accent-foreground group-hover:bg-accent group-hover:text-accent-foreground",
   life: "bg-flag-blue/10 text-flag-blue group-hover:bg-flag-blue group-hover:text-white",
 };

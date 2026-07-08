@@ -12,9 +12,7 @@ const SEARCH_SCOPES = [
   { value: "city", label: "City" },
   { value: "club", label: "Club" },
   { value: "restaurant", label: "Restaurant" },
-  { value: "business", label: "Business" },
   { value: "event", label: "Event" },
-  { value: "job", label: "Job" },
 ] as const;
 
 export function SearchBar({ className }: { className?: string }) {
@@ -58,7 +56,7 @@ export function SearchBar({ className }: { className?: string }) {
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Try “Berlin cricket”, “Munich restaurant”, “Hamburg lawyer”…"
+            placeholder="Try “Berlin cricket”, “Munich restaurant”, “Frankfurt music group”…"
             className="h-12 border-none bg-transparent px-0 text-base shadow-none focus-visible:ring-0"
           />
         </div>

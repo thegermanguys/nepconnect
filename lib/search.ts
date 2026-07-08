@@ -1,12 +1,9 @@
 import { cities } from "@/lib/data/cities";
 import { clubs } from "@/lib/data/clubs";
-import { businesses, groceries } from "@/lib/data/businesses";
 import { restaurants } from "@/lib/data/restaurants";
 import { events } from "@/lib/data/events";
-import { jobs } from "@/lib/data/jobs";
-import { housingListings } from "@/lib/data/housing";
 
-export type SearchResultType = "city" | "club" | "restaurant" | "business" | "event" | "job" | "housing";
+export type SearchResultType = "city" | "club" | "restaurant" | "event";
 
 export interface SearchResult {
   type: SearchResultType;
@@ -50,31 +47,10 @@ export function runSearch(query: string, type?: string): SearchResult[] {
       }
     });
   }
-  if (!type || type === "business") {
-    [...businesses, ...groceries].forEach((b) => {
-      if (matches(b.name, b.category, b.citySlug)) {
-        results.push({ type: "business", title: b.name, subtitle: b.category, href: `/businesses/${b.slug}`, image: b.photos[0] });
-      }
-    });
-  }
   if (!type || type === "event") {
     events.forEach((e) => {
       if (matches(e.title, e.citySlug, e.category)) {
         results.push({ type: "event", title: e.title, subtitle: e.location, href: `/events/${e.slug}`, image: e.poster });
-      }
-    });
-  }
-  if (!type || type === "job") {
-    jobs.forEach((j) => {
-      if (matches(j.title, j.company, j.citySlug)) {
-        results.push({ type: "job", title: j.title, subtitle: j.company, href: `/jobs/${j.slug}` });
-      }
-    });
-  }
-  if (!type || type === "housing") {
-    housingListings.forEach((h) => {
-      if (matches(h.title, h.citySlug, h.type)) {
-        results.push({ type: "housing", title: h.title, subtitle: `€${h.price}/mo`, href: `/housing/${h.slug}`, image: h.photos[0] });
       }
     });
   }

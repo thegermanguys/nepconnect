@@ -239,6 +239,6 @@ export const platformStats = {
   cities: 120,
   communities: 600,
   sportsClubs: 250,
-  businesses: 100,
+  restaurants: 100,
   members: 5000,
 };

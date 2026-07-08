@@ -11,10 +11,7 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { href: "/cities", label: "Cities" },
   { href: "/events", label: "Events" },
-  { href: "/jobs", label: "Jobs" },
-  { href: "/housing", label: "Housing" },
   { href: "/restaurants", label: "Restaurants" },
-  { href: "/resources", label: "Resources" },
 ];
 
 export function Navbar() {

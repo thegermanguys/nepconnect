@@ -34,17 +34,6 @@ const CATEGORY_FORMS: Record<string, { label: string; fields: FieldConfig[] }> =
       { name: "description", label: "Description", type: "textarea", required: true },
     ],
   },
-  business: {
-    label: "Business",
-    fields: [
-      { name: "name", label: "Business name", type: "text", required: true },
-      { name: "city", label: "City", type: "select-city", required: true },
-      { name: "category", label: "Category", type: "text", placeholder: "Consultancy, retail…" },
-      { name: "address", label: "Address", type: "text", required: true },
-      { name: "phone", label: "Phone", type: "tel", required: true },
-      { name: "description", label: "Description", type: "textarea", required: true },
-    ],
-  },
   restaurant: {
     label: "Restaurant",
     fields: [
@@ -57,11 +46,11 @@ const CATEGORY_FORMS: Record<string, { label: string; fields: FieldConfig[] }> =
     ],
   },
   association: {
-    label: "Association",
+    label: "Cultural / Music Group",
     fields: [
-      { name: "name", label: "Association name", type: "text", required: true },
+      { name: "name", label: "Group name", type: "text", required: true },
       { name: "city", label: "City", type: "select-city", required: true },
-      { name: "focus", label: "Focus area", type: "text", placeholder: "Cultural, student, religious…" },
+      { name: "focus", label: "Focus area", type: "text", placeholder: "Cultural organization, music group…" },
       { name: "contactName", label: "Contact name", type: "text", required: true },
       { name: "email", label: "Email", type: "email", required: true },
       { name: "description", label: "Description", type: "textarea", required: true },
@@ -75,29 +64,6 @@ const CATEGORY_FORMS: Record<string, { label: string; fields: FieldConfig[] }> =
       { name: "organizer", label: "Organizer", type: "text", required: true },
       { name: "date", label: "Date", type: "date", required: true },
       { name: "location", label: "Location", type: "text", required: true },
-      { name: "description", label: "Description", type: "textarea", required: true },
-    ],
-  },
-  housing: {
-    label: "Housing",
-    fields: [
-      { name: "title", label: "Listing title", type: "text", required: true },
-      { name: "city", label: "City", type: "select-city", required: true },
-      { name: "price", label: "Monthly price (€)", type: "number", required: true },
-      { name: "size", label: "Size (m²)", type: "number" },
-      { name: "contactName", label: "Contact name", type: "text", required: true },
-      { name: "contactPhone", label: "Contact phone", type: "tel", required: true },
-      { name: "description", label: "Description", type: "textarea", required: true },
-    ],
-  },
-  job: {
-    label: "Job",
-    fields: [
-      { name: "title", label: "Job title", type: "text", required: true },
-      { name: "company", label: "Company", type: "text", required: true },
-      { name: "city", label: "City", type: "select-city", required: true },
-      { name: "salary", label: "Salary", type: "text" },
-      { name: "applyUrl", label: "Application link", type: "text", required: true },
       { name: "description", label: "Description", type: "textarea", required: true },
     ],
   },
@@ -119,10 +85,10 @@ export default function SubmitPage() {
         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-pine/10 text-pine">
           <CheckCircle2 className="h-8 w-8" />
         </span>
-        <h1 className="mt-6 font-display text-3xl font-semibold">Thanks — it's in review</h1>
+        <h1 className="mt-6 font-display text-3xl font-semibold">Thanks — it&apos;s in review</h1>
         <p className="mt-3 max-w-md text-muted-foreground">
           Our moderation team checks every submission before it goes live, usually within 48 hours.
-          We'll email you once it's published.
+          We&apos;ll email you once it&apos;s published.
         </p>
         <Button className="mt-8" onClick={() => setSubmitted(false)}>
           Submit another listing
@@ -141,7 +107,7 @@ export default function SubmitPage() {
           Submit Your Community
         </h1>
         <p className="mt-4 text-muted-foreground">
-          Add your club, business, restaurant, association, event, housing, or job listing. Every
+          Add your club, restaurant, cultural or music group, or event listing. Every
           submission is reviewed before publishing.
         </p>
       </div>

@@ -6,7 +6,7 @@ export function StatsSection() {
     { value: `${platformStats.cities}+`, label: "Cities" },
     { value: `${platformStats.communities}+`, label: "Communities" },
     { value: `${platformStats.sportsClubs}+`, label: "Sports Clubs" },
-    { value: `${platformStats.businesses}+`, label: "Businesses" },
+    { value: `${platformStats.restaurants}+`, label: "Restaurants" },
     { value: `${platformStats.members}+`, label: "Members" },
   ];
 

@@ -43,8 +43,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl text-balance text-base text-white/75 sm:text-lg"
         >
-          Connect with sports clubs, student associations, businesses, events, jobs, housing,
-          restaurants, and communities across Germany — all in one place.
+          Connect with sports clubs, cultural and music groups, restaurants, and events across Germany — all in one place.
         </motion.p>
 
         <motion.div
