@@ -7,7 +7,7 @@ export const events: EventItem[] = [
     title: "Chandra Surya Cup 2.0",
     citySlug: "soest",
     organizer: "Nepalese Stars NRW Cricket Team",
-    poster: "https://picsum.photos/seed/dashain-berlin/900/1200",
+    poster: "/images/chandra-surya.png",
     location: "Geschwister-scholl-straße 1-2, 59494 Soest",
     mapsUrl: "https://maps.app.goo.gl/NuiZwE14TR4Vxsyo7",
     startDate: "2026-07-19",
