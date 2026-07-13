@@ -7,8 +7,8 @@ export const clubs: Club[] = [
     name: "Nepali Rhinos Cricket Club (NRCC) Berlin",
     citySlug: "berlin",
     categorySlug: "cricket",
-    logo: "https://picsum.photos/seed/gorkha-cc-logo/200/200",
-    coverImage: "https://picsum.photos/seed/gorkha-cc-cover/1200/600",
+    logo: "https://www.facebook.com/photo/?fbid=122324000666027695&set=a.122104280450027695",
+    coverImage: "https://www.facebook.com/photo/?fbid=122206359140027695&set=a.122110152314027695",
     description:
       "Berlin's oldest Nepali cricket club, founded in 2020. We play hard tennis ball and compete in different Cricket Leagues.",
     social: {
