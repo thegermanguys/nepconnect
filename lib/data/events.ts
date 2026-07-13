@@ -22,7 +22,7 @@ export const events: EventItem[] = [
     category: "festival",
     registerUrl: ""
   },
-  {
+  /* {
     id: "e2",
     slug: "munich-tihar-deepawali-night",
     title: "Munich Tihar & Deepawali Night",
@@ -105,7 +105,7 @@ export const events: EventItem[] = [
     price: "€8",
     registerUrl: "https://example.com/register/teej-stuttgart",
     status: "approved",
-  },
+  }, */
 ];
 
 export function getEventsByCity(citySlug: string) {
