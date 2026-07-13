@@ -17,7 +17,7 @@ export const events: EventItem[] = [
     category: "sports",
     festivalTag: "cricket",
     price: "0",
-    //registerUrl: "https://example.com/register/dashain-berlin",
+    // registerUrl: "https://example.com/register/dashain-berlin",
     isFeatured: true,
     status: "approved",
   },
