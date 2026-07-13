@@ -23,7 +23,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/85 sm:text-sm"
         >
-          🇳🇵 The Home of Nepalis in Germany
+          The Home of Nepalese in Germany 🇳🇵 
         </motion.span>
 
         <motion.h1

@@ -1,7 +1,7 @@
 import type { Category } from "@/lib/types";
 
 export const categories: Category[] = [
-  { id: "cat1", slug: "cricket", name: "Cricket", icon: "Zap", group: "sports", description: "Weekend leagues, tape-ball, and hardball clubs." },
+  { id: "cat1", slug: "cricket", name: "Cricket", icon: "Zap", group: "sports", description: "Weekend leagues, Tennis-ball, and hardball clubs." },
   { id: "cat2", slug: "football", name: "Football", icon: "CircleDot", group: "sports", description: "5-a-side and 11-a-side teams across every city." },
   { id: "cat3", slug: "volleyball", name: "Volleyball", icon: "Activity", group: "sports", description: "Indoor courts and summer beach tournaments." },
   { id: "cat4", slug: "badminton", name: "Badminton", icon: "Feather", group: "sports", description: "Casual and competitive club nights." },
