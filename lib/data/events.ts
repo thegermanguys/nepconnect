@@ -12,14 +12,15 @@ export const events: EventItem[] = [
     mapsUrl: "https://maps.app.goo.gl/NuiZwE14TR4Vxsyo7",
     startDate: "2026-07-19",
     endDate: "2026-07-19",
-    description:
-      "The Chandra Surya Cup rise again in Soest — battle of 8 cricket teams from Germany.",
-    category: "sports",
-    festivalTag: "cricket",
+    description: "The Chandra Surya Cup rise again in Soest — battle of 8 cricket teams from Germany.",
+    // category: "sports",
+    // festivalTag: "cricket",
     price: "0",
     // registerUrl: "https://example.com/register/dashain-berlin",
     isFeatured: true,
     status: "approved",
+    category: "festival",
+    registerUrl: ""
   },
   {
     id: "e2",
