@@ -941,6 +941,20 @@ export const cities: City[] = [
   eventCount: 1,
   memberCount: 25,
 },
+{
+  id: "c68",
+  slug: "ffo",
+  name: "Frankfurt Oder",
+  state: "Brandenburg",
+  lat: 54.7937,
+  lng: 9.4469,
+  heroImage: "/images/cities/flensburg.jpg",
+  blurb: "Eastern German city located at German-Polish border.",
+  communityCount: 2,
+  businessCount: 1,
+  eventCount: 1,
+  memberCount: 25,
+},
 ];
 export function getCityBySlug(slug: string) {
   return cities.find((c) => c.slug === slug);
