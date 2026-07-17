@@ -41,6 +41,24 @@ export const events: EventItem[] = [
     isFeatured: true,
     status: "approved",
   },
+
+   {
+    id: "e3",
+    slug: "berlin-teej-celebration",
+    title: "Teej Celebration 2026",
+    citySlug: "berlin",
+    organizer: "INAS Germany",
+    poster: "/images/inas-teej-26.jpg",
+    location: "Immanuelkirchstraße 1A, 10405 Berlin-Bezirk Pankow",
+    mapsUrl: "https://maps.app.goo.gl/vppRPCVrpnjzpqH27",
+    startDate: "2026-09-12",
+    description: "Traditional dance, dar khane, and fasting-day rituals celebrated together.",
+    category: "religious",
+    festivalTag: "Teej",
+    price: "€",
+    registerUrl: "",
+    status: "approved",
+  }, 
   /*{
     id: "e3",
     slug: "frankfurt-holi-splash-2026",
@@ -90,23 +108,6 @@ export const events: EventItem[] = [
     registerUrl: "https://example.com/register/career-cologne",
     status: "approved",
   }, */
-  {
-    id: "e3",
-    slug: "berlin-teej-celebration",
-    title: "Teej Celebration 2026",
-    citySlug: "berlin",
-    organizer: "INAS Germany",
-    poster: "/images/inas-teej-26.jpg",
-    location: "Immanuelkirchstraße 1A, 10405 Berlin-Bezirk Pankow",
-    mapsUrl: "https://maps.app.goo.gl/vppRPCVrpnjzpqH27",
-    startDate: "2026-09-12",
-    description: "Traditional dance, dar khane, and fasting-day rituals celebrated together.",
-    category: "religious",
-    festivalTag: "Teej",
-    price: "€",
-    registerUrl: "",
-    status: "approved",
-  }, 
 ];
 
 export function getEventsByCity(citySlug: string) {
