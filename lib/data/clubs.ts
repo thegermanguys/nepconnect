@@ -254,7 +254,7 @@ export const clubs: Club[] = [
     status: "approved",
   },
   
-  {
+ /* {
     id: "cl12",
     slug: "inas-germany",
     name: "INAS Germany",
@@ -272,7 +272,7 @@ export const clubs: Club[] = [
     mapsUrl: "",
     memberCount: 0,
     status: "approved"
-  },
+  }, */
 ];
 
 export function getClubsByCity(citySlug: string) {
