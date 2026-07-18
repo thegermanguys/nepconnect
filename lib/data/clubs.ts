@@ -259,7 +259,7 @@ export const clubs: Club[] = [
     slug: "inas-germany",
     name: "INAS Germany",
     citySlug: "berlin",
-    categorySlug: "cultural-organization",
+    categorySlug: "cultural-organizations",
     logo: "/images/inas-logo.jpg",
     coverImage: "/images/inas-teej-26.jpg",
     description: "International Nepalese Artist Society(INAS) Germany.",
