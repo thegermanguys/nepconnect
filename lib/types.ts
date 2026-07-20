@@ -110,7 +110,7 @@ export interface EventItem {
   endDate?: string;
   description: string;
   category: "festival" | "sports" | "cultural" | "networking" | "religious";
-  festivalTag?: "Dashain" | "Tihar" | "Teej" | "Holi";
+  festivalTag?: "Dashain" | "Tihar" | "Teej" | "Holi" | "Cricket" | "Football";
   price: string;
   registerUrl: string;
   isFeatured?: boolean;
@@ -125,6 +125,25 @@ export interface ReviewItem {
   rating: number;
   comment: string;
   date: string;
+}
+
+export type AffiliateCategory =
+  | "insurance"
+  | "banks"
+  | "credit-cards"
+  | "electricity"
+  | "blocked-account"
+  | "money-transfer"
+  | "internet-sim"
+  | "tax-return";
+
+export interface AffiliateLink {
+  id: string;
+  name: string; // e.g. "N26", "Public Health Insurance: BARMER"
+  category: AffiliateCategory;
+  description: string;
+  url: string;
+  ctaLabel: string; // e.g. "Start Banking", "Explore Plans"
 }
 
 export interface UsefulLink {
