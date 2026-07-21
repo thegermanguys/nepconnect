@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { href: "/cities", label: "Cities" },
   { href: "/events", label: "Events" },
   { href: "/restaurants", label: "Restaurants" },
-  { href: "/affiliates", label: "Partner Deals" },
+  { href: "/affiliates", label: "Affiliates" },
 ];
 
 export function Navbar() {
