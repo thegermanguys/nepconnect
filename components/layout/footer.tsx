@@ -15,6 +15,7 @@ const columns = [
     title: "Life in Germany",
     links: [
       { href: "/restaurants", label: "Restaurants" },
+      { href: "/affiliates", label: "Partner Deals" },
     ],
   },
   {
