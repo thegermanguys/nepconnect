@@ -41,7 +41,7 @@ export const events: EventItem[] = [
     isFeatured: true,
     status: "approved",
   },
-
+  
    {
     id: "e3",
     slug: "berlin-teej-celebration",
@@ -69,12 +69,16 @@ export const events: EventItem[] = [
     location: "Göttingen Uni Sportzentrum",
     mapsUrl: "https://maps.app.goo.gl/kifuDSjJWqoyopTCA",
     startDate: "2026-08-15",
+    endDate: "2026-08-15",
     description: "Gänseliesel TCT 2026 is coming on 15 August 2026.",
     category: "sports",
     festivalTag: "Cricket",
-    price: "Free",
+    price: "0",
     registerUrl: "https://www.facebook.com/profile.php?id=61587741186201",
+    isFeatured: true,
     status: "approved",
+    category: "festival",
+    registerUrl: ""
   },
   /*{
     id: "e4",
