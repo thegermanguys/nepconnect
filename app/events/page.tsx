@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { events } from "@/lib/data/events";
+import { events, getUpcomingEvents, getPastEvents } from "@/lib/data/events";
 import { EventCard } from "@/components/shared/event-card";
 import { cities } from "@/lib/data/cities";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "Festivals, tournaments, and meetups happening across Germany.",
+  description: "Festivals, tournaments, Concerts and meetups happening across Germany.",
 };
 
 export default async function EventsPage({ searchParams }: { searchParams: Promise<{ city?: string }> }) {
   const { city } = await searchParams;
   const filtered = city ? events.filter((e) => e.citySlug === city) : events;
-  const sorted = [...filtered].sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
+  const upcoming = getUpcomingEvents(filtered);
+  const past = getPastEvents(filtered);
   const cityName = cities.find((c) => c.slug === city)?.name;
 
   return (
@@ -25,11 +26,27 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
           Dashain melas, cricket finals, career nights, and more — never miss what matters to the community.
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {sorted.map((e) => (
-          <EventCard key={e.id} event={e} />
-        ))}
-      </div>
+
+      {upcoming.length > 0 ? (
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {upcoming.map((e) => (
+            <EventCard key={e.id} event={e} />
+          ))}
+        </div>
+      ) : (
+        <p className="mt-10 text-sm text-muted-foreground">No upcoming events right now — check back soon.</p>
+      )}
+
+      {past.length > 0 && (
+        <div className="mt-16">
+          <h2 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">Past Events</h2>
+          <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {past.map((e) => (
+              <EventCard key={e.id} event={e} isPast />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

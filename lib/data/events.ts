@@ -13,10 +13,10 @@ export const events: EventItem[] = [
     startDate: "2026-07-19",
     endDate: "2026-07-19",
     description: "The Chandra Surya Cup rise again in Soest — battle of 8 cricket teams from Germany.",
-    // category: "sports",
-    // festivalTag: "cricket",
+    category: "sports",
+    festivalTag: "Cricket",
     price: "0",
-    // registerUrl: "https://example.com/register/dashain-berlin",
+    registerUrl: "https://www.facebook.com/profile.php?id=61587741186201",
     isFeatured: true,
     status: "approved",
     category: "festival",
@@ -34,8 +34,8 @@ export const events: EventItem[] = [
     startDate: "2026-09-05",
     endDate: "2026-09-05",
     description: "A symbol of unity. A passion for football.",
-    category: "festival",
-    festivalTag: "Tihar",
+    category: "sports",
+    festivalTag: "Football",
     price: "0",
     registerUrl: "https://www.facebook.com/nfcstuttgart",
     isFeatured: true,
@@ -59,24 +59,24 @@ export const events: EventItem[] = [
     registerUrl: "",
     status: "approved",
   }, 
-  /*{
-    id: "e3",
-    slug: "frankfurt-holi-splash-2026",
-    title: "Frankfurt Holi Splash",
-    citySlug: "frankfurt",
-    organizer: "Frankfurt Nepali Youth Society",
-    poster: "https://picsum.photos/seed/holi-frankfurt/900/1200",
-    location: "Günthersburgpark, Frankfurt",
-    mapsUrl: "https://maps.google.com/?q=Guenthersburgpark",
-    startDate: "2026-03-14",
-    description: "Colour, music, and food trucks to welcome spring — open to everyone.",
-    category: "festival",
-    festivalTag: "Holi",
+  {
+    id: "e4",
+    slug: "gtct-2026",
+    title: "Gänseliesel TCT 2026 - Tennis Cricket Tournament",
+    citySlug: "göttingen",
+    organizer: "Goettingen Nepalese Society Cricket Club - GNSCC",
+    poster: "/images/gtct-banner.jpeg",
+    location: "Göttingen Uni Sportzentrum",
+    mapsUrl: "https://maps.app.goo.gl/kifuDSjJWqoyopTCA",
+    startDate: "2026-08-15",
+    description: "Gänseliesel TCT 2026 is coming on 15 August 2026.",
+    category: "sports",
+    festivalTag: "Cricket",
     price: "Free",
-    registerUrl: "https://example.com/register/holi-frankfurt",
+    // registerUrl: "https://example.com/register/holi-frankfurt",
     status: "approved",
   },
-  {
+  /*{
     id: "e4",
     slug: "berlin-cricket-premier-league-final",
     title: "Berlin Cricket Premier League — Final",
@@ -118,3 +118,22 @@ export function getEventBySlug(slug: string) {
 }
 export const featuredEvents = events.filter((e) => e.isFeatured);
 export const festivalEvents = events.filter((e) => e.festivalTag);
+
+export function isPastEvent(event: EventItem, now: Date = new Date()): boolean {
+  const referenceDate = new Date(event.endDate ?? event.startDate);
+  // Compare by end-of-day so an event still counts as "upcoming" for its whole day.
+  referenceDate.setHours(23, 59, 59, 999);
+  return referenceDate.getTime() < now.getTime();
+}
+
+export function getUpcomingEvents(list: EventItem[] = events, now: Date = new Date()): EventItem[] {
+  return list
+    .filter((e) => !isPastEvent(e, now))
+    .sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
+}
+
+export function getPastEvents(list: EventItem[] = events, now: Date = new Date()): EventItem[] {
+  return list
+    .filter((e) => isPastEvent(e, now))
+    .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+}
