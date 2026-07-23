@@ -87,7 +87,7 @@ export const events: EventItem[] = [
     startDate: "2026-08-28",
     description: "Nabin K. Bhattarai & Atripta Band are coming to Berlin! 🎟️ Early Bird Tickets are now LIVE!",
     category: "concert",
-   // festivalTag: "Teej",
+    festivalTag: "Music",
     price: "Early bird: €40",
     registerUrl: "https://hamroevents.com/events/nabin-k-bhattarai-live-in-berlin-germany",
     status: "approved",

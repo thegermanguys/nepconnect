@@ -109,8 +109,8 @@ export interface EventItem {
   startDate: string;
   endDate?: string;
   description: string;
-  category: "festival" | "sports" | "cultural" | "networking" | "religious";
-  festivalTag?: "Dashain" | "Tihar" | "Teej" | "Holi" | "Cricket" | "Football";
+  category: "festival" | "sports" | "cultural" | "networking" | "religious" | "concert" | "other" | "offer";
+  festivalTag?: "Dashain" | "Tihar" | "Teej" | "Holi" | "Cricket" | "Football" | "Music" | "Other" | "Volleyball" | "Offer";
   price: string;
   registerUrl: string;
   isFeatured?: boolean;
