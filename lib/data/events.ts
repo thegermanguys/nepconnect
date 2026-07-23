@@ -20,7 +20,6 @@ export const events: EventItem[] = [
     isFeatured: true,
     status: "approved",
     category: "festival",
-    registerUrl: ""
   },
   {
     id: "e2",
@@ -41,7 +40,6 @@ export const events: EventItem[] = [
     isFeatured: true,
     status: "approved",
   },
-  
    {
     id: "e3",
     slug: "berlin-teej-celebration",
@@ -78,7 +76,6 @@ export const events: EventItem[] = [
     isFeatured: true,
     status: "approved",
     category: "festival",
-    registerUrl: ""
   },
   /*{
     id: "e4",
