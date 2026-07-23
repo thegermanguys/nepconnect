@@ -9,9 +9,8 @@ export const restaurants: Restaurant[] = [
     category: "Restaurant",
     logo: "/images/restaurants/nepalmomo-logo.jpg",
     photos: [
-      "https://picsum.photos/seed/momohouse-1/900/600",
-      "https://picsum.photos/seed/momohouse-2/900/600",
-      "https://picsum.photos/seed/momohouse-3/900/600",
+      "/images/restaurants/nepalmomo-p1.jpg",
+      "/images/restaurants/nepalmomo-p2.jpg",
     ],
     description: "Steamed, fried, and jhol momos alongside thakali sets — a Warschauer Straße favourite since 2021.",
     openingHours: [
