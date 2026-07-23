@@ -4,13 +4,14 @@ export const restaurants: Restaurant[] = [
   {
     id: "r1",
     slug: "nepal-momo",
-    name: "Nepal Momo",
+    name: "Nepal Momo Warschauer Str.",
     citySlug: "berlin",
     category: "Restaurant",
     logo: "/images/restaurants/nepalmomo-logo.jpg",
     photos: [
       "/images/restaurants/nepalmomo-p1.jpg",
       "/images/restaurants/nepalmomo-p2.jpg",
+      "/images/restaurants/nepalmomo-p3.jpg",
     ],
     description: "Steamed, fried, and jhol momos alongside thakali sets — a Warschauer Straße favourite since 2021.",
     openingHours: [
@@ -90,10 +91,10 @@ export const restaurants: Restaurant[] = [
   {
     id: "r4",
     slug: "momo-haus",
-    name: "Momo Haus",
+    name: "Momo Haus Restaurant",
     citySlug: "berlin",
     category: "Restaurant",
-    logo: "https://picsum.photos/seed/momohaus-logo/200/200",
+    logo: "/images/restaurants/momohaus-logo.png",
     photos: [
       "https://picsum.photos/seed/momohaus-1/900/600",
       "https://picsum.photos/seed/momohaus-2/900/600",
@@ -102,7 +103,7 @@ export const restaurants: Restaurant[] = [
     openingHours: [{ day: "Mon–Sun", hours: "12:00 – 22:00" }],
     address: "Holzmarktstraße 67, 10179 Berlin",
     mapsUrl: "https://maps.google.com/?q=Holzmarktstra%C3%9Fe+67+Berlin",
-    social: { website: "https://momo-haus.de/" },
+    social: { website: "https://momo-haus.de/", facebook: "https://www.facebook.com/momohaus.de" , instagram: "https://www.instagram.com/momohausberlin" },
     phone: "+49 30 40520807",
     rating: 4.6, 
     reviewCount: 60,
