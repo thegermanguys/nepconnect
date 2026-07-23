@@ -74,7 +74,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border py-6">
         <div className="container flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Nepali Connect Germany. Built by the community, for the community.</p>
+          <p>© {new Date().getFullYear()} NepaConnect. Built by The German Guy, for the Nepalese community in Germany.</p>
           <div className="flex gap-4">
             <Link href="/submit" className="hover:text-foreground">Advertise</Link>
           </div>
