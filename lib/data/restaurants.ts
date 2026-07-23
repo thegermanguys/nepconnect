@@ -51,7 +51,8 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Schwanthalerstrasse+21+Munich",
     social: { facebook: "https://facebook.com/yetikitchenmunich" },
     phone: "+49 89 7890 1234",
-    rating: 4.7, reviews: 145
+    rating: 4.7, 
+    reviews: 145,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [
@@ -74,7 +75,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Zeil+65+Frankfurt",
     social: { instagram: "https://instagram.com/namastefrankfurt" },
     phone: "+49 69 8901 2345",
-   rating: 4.5, reviews: 96
+   rating: 4.5, reviews: 96,
     status: "approved",
     cuisine: ["Nepali"],
     menuHighlights: [{ name: "Dal Bhat Set", price: "€13.50" }],
@@ -101,7 +102,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Holzmarktstra%C3%9Fe+67+Berlin",
     social: { website: "https://momo-haus.de/" },
     phone: "+49 30 40520807",
-    rating: 4.6, reviews: 60
+    rating: 4.6, reviews: 60,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [
@@ -127,7 +128,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Boxhagener+Str+60+Berlin",
     social: { website: "https://www.bajraberlin.de/" },
     phone: "",
-    rating: 4.8, reviews: 120
+    rating: 4.8, reviews: 120,
     status: "approved",
     cuisine: ["Nepali"],
     menuHighlights: [
@@ -156,7 +157,7 @@ export const restaurants: Restaurant[] = [
       instagram: "https://www.instagram.com/kathmandu_kitchen_1/",
     },
     phone: "030-40391221",
-    rating: 4.3, reviews: 65
+    rating: 4.3, reviews: 65,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Dal Bhat Tarkari", price: "€12.00" }],
@@ -179,7 +180,7 @@ export const restaurants: Restaurant[] = [
       facebook: "https://www.facebook.com/namastenepalberlin/",
     },
     phone: "030 859 64444",
-    rating: 4.9, reviews: 85
+    rating: 4.9, reviews: 85,
     status: "approved",
     cuisine: ["Nepali"],
     menuHighlights: [
@@ -202,7 +203,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=S%C3%BCdwestkorso+69a+Berlin",
     social: {},
     phone: "",
-    rating: 4.7, reviews: 756
+    rating: 4.7, reviews: 756,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Sherpa Teller", price: "€15.90" }],
@@ -225,7 +226,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Rubensstra%C3%9Fe+66+Berlin",
     social: { website: "https://newyakyeti.com/" },
     phone: "+49 30 80106446",
-    rating: 4.5, reviews: 40
+    rating: 4.5, reviews: 40,
     status: "approved",
     cuisine: ["Nepali", "Vegan"],
     menuHighlights: [{ name: "Vegan Momo", price: "€8.00" }],
@@ -252,7 +253,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Mainzer+Str+8+Berlin",
     social: { website: "https://www.dalbhat.de/" },
     phone: "+49 30 58655738",
-    rating: 4.8, reviews: 45
+    rating: 4.8, reviews: 45,
     status: "approved",
     cuisine: ["Nepali", "Vegan"],
     menuHighlights: [{ name: "Vegan Momo", price: "€8.50" }],
@@ -275,7 +276,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Rykestra%C3%9Fe+40+Berlin",
     social: { website: "https://www.mitho-cha.com/" },
     phone: "+49 30 44041455",
-    rating: 4.3, reviews: 107
+    rating: 4.3, reviews: 107,
     status: "approved",
     cuisine: ["Nepali", "Tibetan"],
     menuHighlights: [{ name: "Kwati (9-Bean Soup)", price: "€7.50" }],
@@ -295,7 +296,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Turmstra%C3%9Fe+17+Berlin",
     social: { website: "https://www.der-everest-restaurant.de/" },
     phone: "+49 30 39834017",
-    rating: 4.2, reviews: 90
+    rating: 4.2, reviews: 90,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Chicken Tikka", price: "€13.90" }],
@@ -315,7 +316,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Odenwaldstra%C3%9Fe+7+Berlin",
     social: { website: "https://www.himalayankitchen.de/" },
     phone: "",
-    rating: 4.4, reviews: 50
+    rating: 4.4, reviews: 50,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Dal Bhat Set", price: "€12.50" }],
@@ -338,7 +339,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Ahrweilerstra%C3%9Fe+31+Berlin",
     social: { website: "https://kumarinepal.com/" },
     phone: "+49 30 83200707",
-    rating: 4.5, reviews: 283
+    rating: 4.5, reviews: 283,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Butter Chicken", price: "€13.50" }],
@@ -361,7 +362,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Zossener+Str+19+Berlin",
     social: { website: "https://www.tibet-haus.com/" },
     phone: "030 6948948",
-    rating: 4.4, reviews: 1417
+    rating: 4.4, reviews: 1417,
     status: "approved",
     cuisine: ["Nepali", "Tibetan"],
     menuHighlights: [{ name: "Kathmandu Vegetable Curry", price: "€10.50" }],
@@ -387,7 +388,7 @@ export const restaurants: Restaurant[] = [
       facebook: "https://www.facebook.com/holyeverest/",
     },
     phone: "+49 176 64316963",
-    rating: 4.5, reviews: 30
+    rating: 4.5, reviews: 30,
     status: "approved",
     cuisine: ["Nepali", "Vegan"],
     menuHighlights: [{ name: "Momo Namobuddha (Vegan)", price: "€8.50" }],
@@ -407,7 +408,7 @@ export const restaurants: Restaurant[] = [
     mapsUrl: "https://maps.google.com/?q=Kirchstra%C3%9Fe+16+Berlin",
     social: { website: "https://www.om-restaurant.de/" },
     phone: "+49 30 39749554",
-    rating: 4.5, reviews: 858
+    rating: 4.5, reviews: 858,
     status: "approved",
     cuisine: ["Nepali", "Indian"],
     menuHighlights: [{ name: "Nepali Dal Bhat Tarkari (Masu)", price: "€13.00" }],
