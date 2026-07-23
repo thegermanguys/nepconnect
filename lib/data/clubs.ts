@@ -47,7 +47,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 30,
-    isFeatured: true,
+    isFeatured: false,
     status: "approved",
   },
 
@@ -122,7 +122,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 30,
-    isFeatured: true,
+    isFeatured: false,
     status: "approved",
   },
 
@@ -230,7 +230,7 @@ export const clubs: Club[] = [
     practiceTime: "Wednesdays, 09:00 – 13:00",
     mapsUrl: "https://maps.app.goo.gl/jz37AohyLq6jLMqEA",
     memberCount: 25,
-    isFeatured: true,
+    isFeatured: false,
     status: "approved",
   },
 
@@ -251,6 +251,7 @@ export const clubs: Club[] = [
     practiceTime: "Alternate Sundays, 11:00 – 14:00",
     mapsUrl: "https://maps.google.com/?q=Poller+Wiesen+Cologne",
     memberCount: 20,
+    isFeatured: false,
     status: "approved",
   },
   
@@ -275,6 +276,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -295,6 +297,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -315,6 +318,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -335,6 +339,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -354,6 +359,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -378,6 +384,7 @@ export const clubs: Club[] = [
     practiceTime: "Saturdays, 08:00 – 11:00",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -401,6 +408,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -421,6 +429,7 @@ export const clubs: Club[] = [
     practiceTime: "Wednesdays 18:00 – 20:00, Saturdays 09:00 – 11:30",
     mapsUrl: "https://maps.google.com/?q=Marckmannstra%C3%9Fe+125+20539+Hamburg",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -445,6 +454,7 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "",
     memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
   {
@@ -468,6 +478,30 @@ export const clubs: Club[] = [
     practiceTime: "",
     mapsUrl: "https://maps.google.com/?q=Wasserland+14+Bonn",
     memberCount: 0,
+    isFeatured: false,
+    status: "approved",
+  },
+  {
+    id: "cl26",
+    slug: "nsc-köln",
+    name: "NSC Köln",
+    citySlug: "cologne",
+    categorySlug: "football",
+    logo: "/images/nsck-logo.jpg",
+    coverImage: "",
+    description:
+      "Nepalese Football Club Köln, based in Köln, our club is created to bring together the Nepalese community through sports.",
+    social: {
+      facebook: "https://www.facebook.com/profile.php?id=61591846327136",
+    },
+    captainName: "",
+    phone: "",
+    email: "nsc.koeln@gmail.com",
+    practiceLocation: "",
+    practiceTime: "",
+    mapsUrl: "",
+    memberCount: 0,
+    isFeatured: false,
     status: "approved",
   },
 ];
