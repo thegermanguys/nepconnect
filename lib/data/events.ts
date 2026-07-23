@@ -73,7 +73,7 @@ export const events: EventItem[] = [
     category: "sports",
     festivalTag: "Cricket",
     price: "Free",
-    // registerUrl: "https://example.com/register/holi-frankfurt",
+    registerUrl: "https://www.facebook.com/profile.php?id=61587741186201",
     status: "approved",
   },
   /*{
