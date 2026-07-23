@@ -19,7 +19,6 @@ export const events: EventItem[] = [
     registerUrl: "https://www.facebook.com/profile.php?id=61587741186201",
     isFeatured: true,
     status: "approved",
-    category: "festival",
   },
   {
     id: "e2",
@@ -75,7 +74,6 @@ export const events: EventItem[] = [
     registerUrl: "https://www.facebook.com/profile.php?id=61587741186201",
     isFeatured: true,
     status: "approved",
-    category: "festival",
   },
   /*{
     id: "e4",
